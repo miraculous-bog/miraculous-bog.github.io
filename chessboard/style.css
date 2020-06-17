@@ -7,21 +7,21 @@
 		}
 		section {
 			border: 1px solid black;
-			width: 950px;
+			width: 675px;
 			margin: 0 auto;
 		}
 		.board {
-			width: 800px;
 			margin: 0 auto;
 			display: grid;
-			grid-template-columns: repeat(8, 100px);
+			grid-template-columns: repeat(8, 75px);
 			padding: 40px;
 		}
 		.square {
 			border: 1px solid black;
 			width: ;
-			height: 100px;
+			height: 75px;
 			position: relative;
+			padding: 0;
 		}
 		.f:nth-child(even) {
 			background: black;
