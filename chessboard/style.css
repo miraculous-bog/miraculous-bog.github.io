@@ -1,0 +1,24 @@
+	body {
+	font-family: 'arial';
+		}
+				* {
+			margin: 0;
+			padding: 0;
+		}
+		.board {
+			width: 1000px;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: repeat(8, 1fr);
+		}
+		.square {
+			border: 1px solid black;
+			width: ;
+			height: 88px;
+		}
+		.f:nth-child(odd) {
+			background: black;
+		}
+		.s:nth-child(even) {
+			background: black;
+		}
