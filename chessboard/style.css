@@ -5,20 +5,39 @@
 			margin: 0;
 			padding: 0;
 		}
+		section {
+			border: 1px solid black;
+			width: 950px;
+			margin: 0 auto;
+		}
 		.board {
-			width: 1000px;
+			width: 800px;
 			margin: 0 auto;
 			display: grid;
-			grid-template-columns: repeat(8, 1fr);
+			grid-template-columns: repeat(8, 100px);
+			padding: 40px;
 		}
 		.square {
 			border: 1px solid black;
 			width: ;
-			height: 88px;
+			height: 100px;
+			position: relative;
 		}
-		.f:nth-child(odd) {
+		.f:nth-child(even) {
 			background: black;
+			color: black;
 		}
-		.s:nth-child(even) {
+		.s:nth-child(odd) {
 			background: black;
+			color: white;
+		}
+		.number {
+			position: absolute;
+			top: 45%;
+			right: 90%;
+		}
+		.letters {
+			position: absolute;
+			top: 82%;
+			left: 47%;
 		}
