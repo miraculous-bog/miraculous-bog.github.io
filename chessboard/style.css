@@ -5,23 +5,29 @@
 			margin: 0;
 			padding: 0;
 		}
-		section {
-			border: 1px solid black;
-			width: 675px;
+		.one {
+			padding-top: 75px;
+			padding-right: 75px;
+			border: 4px solid brown;
+			margin: 0 auto;
+			width: 690px;
+		}
+		section .two{
+			width: 683px;
 			margin: 0 auto;
 		}
 		.board {
 			margin: 0 auto;
 			display: grid;
 			grid-template-columns: repeat(8, 75px);
-			padding: 40px;
+			float: right;
+			
+
 		}
 		.square {
-			border: 1px solid black;
+			border: 1px solid brown;
 			width: ;
 			height: 75px;
-			position: relative;
-			padding: 0;
 		}
 		.f:nth-child(even) {
 			background: black;
@@ -31,14 +37,19 @@
 			background: black;
 			color: white;
 		}
-		.number {
-			position: absolute;
-			top: 45%;
-			right: 90%;
+		.column {
+			float: left;
 		}
-		.letters {
-			position: absolute;
-			top: 82%;
-			left: 47%;
-			text-transform: uppercase;
+		td {
+			width: 75px;
+			height: 75px;
+			text-align: center;
+			font-weight: 600;
+			border: none;
+		}
+		table {
+			border: none;
+		}
+		.clear {
+			clear: both;
 		}
