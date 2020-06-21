@@ -8,9 +8,10 @@
 		.one {
 			padding-top: 75px;
 			padding-right: 75px;
+			padding-bottom: 30px;
 			border: 4px solid brown;
 			margin: 0 auto;
-			width: 690px;
+			width: 790px;
 		}
 		div .two{
 			width: 683px;
@@ -37,19 +38,32 @@
 			background: black;
 			color: white;
 		}
-		.column {
+		.listone {
 			float: left;
 		}
-		td {
-			width: 75px;
-			height: 75px;
-			text-align: center;
-			font-weight: 600;
-			border: none;
-		}
-		table {
-			border: none;
-		}
 		.clear {
-			clear: both;
+		clear:both }
+		.listone {
+			padding-left: 45px;
+			padding-top: 33px;
+		}
+		.listone li{
+			padding-bottom: 53px;
+		}
+		li {
+						font-weight: 600;
+			font-size: 20px;
+		}
+		ul {
+						list-style: none;
+		}
+		.listtwo li{
+			display: inline-block;
+		}
+		.listtwo {
+			padding-left: 55px;
+			text-transform: uppercase;
+		}
+		.listtwo li{
+			padding-left: 56px;
 		}
