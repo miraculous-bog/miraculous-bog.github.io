@@ -8,7 +8,7 @@
 		.one {
 			padding-top: 75px;
 			padding-right: 75px;
-			padding-bottom: 30px;
+			padding-bottom: 75px;
 			border: 4px solid brown;
 			margin: 0 auto;
 			width: 790px;
@@ -22,11 +22,10 @@
 			display: grid;
 			grid-template-columns: repeat(8, 75px);
 			float: right;
-			
+						border: 1px solid black;
 
 		}
 		.square {
-			border: 1px solid brown;
 			width: ;
 			height: 75px;
 		}
@@ -40,30 +39,44 @@
 		}
 		.listone {
 			float: left;
+			padding-left: 50px;
+			padding-right:0;
+			width: ;
+		}
+		.listone ul{
+			height: 600px;
+
+		}
+		.listone li{
+					display: block;
+					height: 75px;
+		}
+		.listone p{
+			padding-top: 32px;
+
 		}
 		.clear {
 		clear:both }
-		.listone {
-			padding-left: 45px;
-			padding-top: 33px;
-		}
-		.listone li{
-			padding-bottom: 53px;
-		}
-		li {
-						font-weight: 600;
+		p {
+			font-weight: 600;
 			font-size: 20px;
 		}
 		ul {
-						list-style: none;
+			list-style: none;
 		}
-		.listtwo li{
-			display: inline-block;
-		}
-		.listtwo {
-			padding-left: 55px;
+			.listtwo ul{
+			width: 600px;
+			padding-left: 81px;
 			text-transform: uppercase;
+			padding-top: 20px;
 		}
-		.listtwo li{
-			padding-left: 56px;
+			.listtwo li{
+			display: block;
+			width: 75px;
+			margin: 0;
+			padding: 0;
+			float: left;
+		}
+		.listtwo p{
+			padding-left: 32px;
 		}
