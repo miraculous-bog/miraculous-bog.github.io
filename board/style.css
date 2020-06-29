@@ -1,0 +1,90 @@
+	body {
+	font-family: 'arial';
+		}
+				* {
+			margin: 0;
+			padding: 0;
+		}
+		.one {
+			padding-top: 75px;
+			padding-right: 75px;
+			padding-bottom: 75px;
+			border: 4px solid brown;
+			margin: 0 auto;
+			width: 1000px;
+			display: flex;
+			justify-content: space-between;
+		}
+		div .two{
+			width: 683px;
+			margin: 0 auto;
+		}
+		.board {
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: repeat(8, 75px);
+			float: right;
+						border: 1px solid black;
+
+		}
+		.square {
+			width: ;
+			height: 75px;
+		}
+		.f:nth-child(even) {
+			background: black;
+			color: black;
+		}
+		.s:nth-child(odd) {
+			background: black;
+			color: white;
+		}
+		.listone {
+			float: left;
+			padding-left: 50px;
+			padding-right:0;
+			width: ;
+		}
+		.listone ul{
+			height: 600px;
+
+		}
+		.listone li{
+					display: block;
+					height: 75px;
+		}
+		.listone p{
+			padding-top: 32px;
+
+		}
+		.clear {
+		clear:both }
+		p {
+			font-weight: 600;
+			font-size: 20px;
+		}
+		ul {
+			list-style: none;
+		}
+			.listtwo ul{
+			width: 600px;
+			padding-left: 81px;
+			text-transform: uppercase;
+			padding-top: 20px;
+		}
+			.listtwo li{
+			display: block;
+			width: 75px;
+			margin: 0;
+			padding: 0;
+			float: left;
+		}
+		.listtwo p{
+			padding-left: 32px;
+		}
+		.right {
+			display: grid;
+			grid-template-columns: repeat(4, 75px);
+			height: 550px;
+		}
+		.l
