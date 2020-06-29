@@ -11,7 +11,9 @@
 			padding-bottom: 75px;
 			border: 4px solid brown;
 			margin: 0 auto;
-			width: 790px;
+			width: 1000px;
+			display: flex;
+			justify-content: space-between;
 		}
 		div .two{
 			width: 683px;
@@ -80,3 +82,9 @@
 		.listtwo p{
 			padding-left: 32px;
 		}
+		.right {
+			display: grid;
+			grid-template-columns: repeat(4, 75px);
+			height: 550px;
+		}
+		.l
