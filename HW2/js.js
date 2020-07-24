@@ -1,6 +1,6 @@
 let first = parseInt(prompt('enter first number'));
 let second = parseInt(prompt('enter second number'));
-let pair = confirm('do you need pair numbers');
+let even = confirm('do you need even numbers');
 let sum = first;
 
 function isInt(num) {
@@ -15,7 +15,7 @@ if ( parseInt( num ) != num ) {
 function pl(num) { return ((num % 2) == 0 ? c = true : c=false);}
 
 if (isInt(first) && isInt(second)) {
-	if (pair) {
+	if (even) {
 		for (i = first; i<=second; i++ ) {
 			if (pl(i)) {
 				sum = sum + i;			
