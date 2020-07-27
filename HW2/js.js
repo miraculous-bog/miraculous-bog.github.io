@@ -1,6 +1,6 @@
 let first = parseInt(prompt('enter first number'));
 let second = parseInt(prompt('enter second number'));
-let even = confirm('do you need even numbers');
+let even = confirm('do you need scip even numbers');
 let sum = first;
 
 function isInt(num) {
@@ -14,12 +14,10 @@ if ( parseInt( num ) != num ) {
 
 function pl(num) { return ((num % 2) == 0 ? c = true : c=false);}
 
-if (isInt(first) && isInt(second)) {
-	if (even) {
+if (isInt(first) && isInt(second) && first<second) {
+	if (!even) {
 		for (i = first; i<=second; i++ ) {
-			if (pl(i)) {
-				sum = sum + i;			
-			} 
+				sum = sum + i;			 
 		}
 	} else 
 		for (i = first; i<=second; i++ ) {
@@ -32,3 +30,15 @@ if (isInt(first) && isInt(second)) {
 	second = parseInt(prompt('enter second number'));
 }
 console.log(sum-1);
+
+
+
+
+/*
+
+let first;
+let second;
+do { 
+	first = parseInt(prompt('enter first number'));
+	second = parseInt(prompt('enter second number'));
+} while(isInt(first) & isInt(second));*/
