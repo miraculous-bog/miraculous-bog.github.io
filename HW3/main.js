@@ -88,7 +88,7 @@ function countSymbol(arr,l) {
 function getPassword(len) {
 	let pass = '';
 	for (let i = 0; i <= len; i++){
-		pass = pass + Math.floor(Math.random() * 10) + ' ';
+		pass = pass + Math.floor(Math.random() * 10);
 	} return pass;
 }
 
