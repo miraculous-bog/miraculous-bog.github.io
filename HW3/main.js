@@ -33,8 +33,8 @@ function getTax(z) {
 }
 
 function getRand(n, m) {
-  n = Math.ceil(n);
-  m = Math.floor(m);
+   n = Math.ceil(n);
+   m = Math.floor(m);
   return Math.floor(Math.random() * (m - n + 1)) + n; 
 }
 
@@ -51,7 +51,7 @@ function countSymbol(arr,l) {
 }
 
 	let arrReady = arr.split('');
-    var v, newArray = [];
+    let v, newArray = [];
 
     for (let i =0; i <= arrReady.length - 1; i++  ) { 
         v = arrReady[i];
