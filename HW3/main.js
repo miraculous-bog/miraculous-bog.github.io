@@ -1,6 +1,4 @@
 const getMaxDigit = (n) => +Math.max(...(n + '').split(''));
- // console.log(getMaxDigit(43629));
-
 
 function degreeOfNumber(a,b) {
 let result = a;
