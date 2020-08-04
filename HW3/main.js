@@ -1,5 +1,6 @@
+/*функція знаходить найбільшу цифру в заданому числі*/
 const getMaxDigit = (n) => +Math.max(...(n + '').split(''));
-
+/*функція підносить степінь до числа*/
 function degreeOfNumber(a,b) {
 let result = a;
 	if (b===1) {
@@ -22,85 +23,76 @@ let result = a;
 		} return 1/result;
 	}
 }
-
+/*функція повертає правильний правопис імені*/
 function rightName(s){
 	return s[0].toUpperCase() + s.substr(1).toLowerCase();
 }
-
+/*функція повертає числа заробітньої плати з вирахуванням податків*/
 function getTax(z) {
 	let vid = z / 100 * 19.5;
 	return z - vid;
 }
-
+/*функція повертає випадкове число із діапазону введеного користувачем*/
 function getRand(n, m) {
-   n = Math.ceil(n);
-   m = Math.floor(m);
-  return Math.floor(Math.random() * (m - n + 1)) + n; 
+	n = Math.ceil(n);
+	m = Math.floor(m);
+ 	return Math.floor(Math.random() * (m - n + 1)) + n; 
 }
-
-
+/*функція повертає число повторювальних елементів в заданому рядку, при цьому вона містить підфункцію, яка повертає булеве значення(чи міститься введенний символ в рядку)*/
 function countSymbol(arr,l) {
-
 	function contains(arrReadyTwo, lTwo) {
-    for (let i = 0; i < arrReadyTwo.length; i++) {
-        if (arrReadyTwo[i] === lTwo) {
-            return true;
-        }
-    }
-    return false;
-}
+		for (let i = 0; i < arrReadyTwo.length; i++) {
+			if (arrReadyTwo[i] === lTwo) {
+            	return true;
+    	    }
+		}
+    	return false;
+	}
 
 	let arrReady = arr.split('');
     let v, newArray = [];
 
     for (let i =0; i <= arrReady.length - 1; i++  ) { 
         v = arrReady[i];
-        if (newArray[v]) {
-         newArray[v] += 1;
-        }
-        else newArray[v] = 1;
-    } if(contains(arrReady,l)) { return newArray[l]; } 
-    else return console.log('такого елемента немає');
-    
+        	if (newArray[v]) {
+        		newArray[v] += 1;
+        	}
+        	else newArray[v] = 1;
+    } 
+	if(contains(arrReady,l)) { return newArray[l]; } 
+	else return console.log('такого елемента немає');
 }
-
-
-
-
-
- function exc(nu) {
+/*конвертує UAH в $*/
+function exc(nu) {
  	let num = +(nu.substring(0, nu.length - 1));
  	let num2 = +(nu.substring(0, nu.length - 3));
 	let cur = nu.split('');
 	let cur2 = cur[nu.length - 1];
 	if (cur2 === '$') {
-			return (num * 27) + '$';
+		return (num * 27) + '$';
 	} else if ((cur2 === 'H') || (cur2 === 'h')) {	
-	return (num2 / 27) + '$';
+		return (num2 / 27) + '$';
 	} else return console.log('дана валюта не конвертується, тільки uah або $');
 }
-
-
-
-
+/*генератор випадкових паролів на задану кількість символів*/
 function getPassword(len) {
 	let pass = '';
 	for (let i = 0; i <= len; i++){
 		pass = pass + Math.floor(Math.random() * 10);
 	} return pass;
 }
-
- function palindrom(words) {
-    let wordsS = words.length;
-    let result = '';
-    for (let i = 0; i < wordsS; i++) {
-      if (words[i] === words[wordsS - 1 - i]) { 
-       return result = 'так';
-      } else {
-   		return result = 'так';
-      }
-    }
-  } 
+/*повертає булеве значення, яке вказує чи є введений рядок паліндромом*/
+function palindrom(words) {
+	let wordsS = words.length;
+	let result = '';
+	for (let i = 0; i < wordsS; i++) {
+		if (words[i] === words[wordsS - 1 - i]) { 
+			return result = 'так';
+		} else {
+   			return result = 'так';
+			}
+    	}
+	} 
 
 document.writeln(`<p>(№1) максимальна цифра ${getMaxDigit(1236)}</p>`);
 document.writeln(`<p>(№2) піднести до степеня  ${degreeOfNumber(2,5)}</p>`);
