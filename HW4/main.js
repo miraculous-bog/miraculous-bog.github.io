@@ -12,6 +12,15 @@ function givePairs(students) {
 }
 console.log(givePairs(students));
 
+
+function i(coupleAfterI) {
+	let arrI=[...coupleAfterI];
+	for (let i = 0; i<arrI.length; i++){
+		arrI[i] = arrI[i].join(' і ');
+	} return arrI;
+}
+
+console.log(i(givePairs(students)));
 /*ф-ція встановлює теми для пар студентів*/
 function setThemes(students,themes){ 
 	let newArr = [];
@@ -23,16 +32,16 @@ function setThemes(students,themes){
 
 console.log(setThemes(givePairs(students),themes));
 
-/*function setMarks(st,marks){ 
-	let newMarksArr = [];
-	newMarksArr = [...st];
-	for (let i = 0; i < st.length -1; i++) {
-		newMarksArr[i].push(marks[i]);
-	} return console.log(newMarksArr);
+
+/*------------------------------------*/
+function getMarks(stud, mark) {
+     let newArray = [];
+     for(let i = 0; i < stud.length; i++) {
+          newArray[i] = [[stud[i]], [mark[i]]];
+     }
+     return console.log(newArray);
 }
-
-setMarks(students,marks);*/
-
+getMarks(students,marks);
 /*ф-ція встановлює випадкові оцінки для студентів*/
 function setMarksRandom(a){ 
 	let newArr = [];
@@ -42,11 +51,5 @@ function setMarksRandom(a){
 	} return newArr;
 }
 
-console.log(setThemes(givePairs(students),themes));
+console.log(setMarksRandom(setThemes(givePairs(students),themes)));
 
-let newm1;
-let newm2 = [...students];
-for (let i =0; i < marks.length; i++) {
-	newm1 = marks.slice(0,1).join();
-	newm2 = newm2[i].push(newm1);
-} console.log(newm2);
