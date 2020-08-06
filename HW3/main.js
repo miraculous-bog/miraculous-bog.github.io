@@ -49,7 +49,7 @@ function countSymbol(arr,l) {
     	return false;
 	}
 
-	let arrReady = arr.split('');
+	let arrReady = [...arr.split('')];
     let v, newArray = [];
 
     for (let i =0; i <= arrReady.length - 1; i++  ) { 
