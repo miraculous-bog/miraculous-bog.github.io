@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'pribambasregular';
+    src: url("../fonts/1/pribambas-regular-webfont.ttf") format("truetype");
+    src: url('../fonts/1/pribambas-regular-webfont.woff2') format('woff2'),
+         url('../fonts/1/pribambas-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pribambas-regular-webfont';
+       src: url("../fonts/1/pribambas-regular-webfont.ttf") format("truetype");
+    src: url('../fonts/1/bebas_neue_cyrillic-webfont.woff2') format('woff2'),
+         url('../fonts/1/bebas_neue_cyrillic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
