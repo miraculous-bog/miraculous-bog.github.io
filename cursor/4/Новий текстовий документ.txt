@@ -1,0 +1,42 @@
+isNan - ïåðåâ³ðÿº ÷è çíà÷åííÿ Nan
+indexOf - 
+ñòâîðèòè ìàñèâ ³ç 20 ì³ñöÿìè - const arr = new Array(20);
+
+.pop(); - âèäàëÿº îñòàííº çíà÷ååíÿ ìàñèâó òà ìîæíà çáåðåãòè â çì³ííó
+.push(); - äîäàº â ê³íåöü åëåìåíò
+.shift(); - òàê ñàì ÿê ³ç .pop ò³ëüêè ñïî÷àòêó
+.unshift();- òàê ñàìî, ÿê ³ ç push ò³ëüêè ñïî÷àòêó
+
+includes - ïåðåâ³ðÿº ÷è öåé åëåìåíò â ìàñèâ³
+
+indexOf ïîâåðòàº ï³ä ÿêèì íîìåðîì â ìàñèâ³ äàíèé åëåìåíò çíàõîäèòüñÿ
+
+concat - îá'ºäíóº åëåìåíòè 
+
+.slice 
+çàìèêàííÿ - çäàòí³ñòü ôóíêö³¿ çáåð³ãàòè çíà÷åííÿ 
+
+
+
+
+
+/*
+
+function setThemes2(arrI, themes) {
+     let newArray = [];
+     for(let i = 0; i < arrI.length; i++) {
+          newArray[i] = [[arrI[i]], [themes[i]]];
+     }
+     return newArray;
+}
+
+console.log(setThemes2(i(givePairs(students)),themes));
+
+function i(coupleAfterI) {
+	let arrI=[...coupleAfterI];
+	for (let i = 0; i<arrI.length; i++){
+		arrI[i] = arrI[i].join(' і ');
+	} return arrI;
+}
+
+console.log(i(givePairs(students)));*/

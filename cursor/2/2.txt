@@ -1,0 +1,19 @@
+Boolean - приводить значення до булевого
+-.toLowerCase - переводить стрінгу до маншого регістру.
+можна писати скорочені форму без дужок, якщо дія є одна і вміщується в рядок
+
+parseInt() - функція переведення значень
+
+10 + '15' - конкантенація
+
+10 + +'15' - додавання
+
+тринарний опеератор
+
+if (10>25) console.log('right condition'); else console.log('wrong condition'); - simple operator
+
+(10>25) ? console.log('right condition'); : console.log('wrong condition'); - ternary
+
+console.log(10>25 ? 'right conditional' : 'false conditional');
+
+.isInteger - показує чи число є цілим
