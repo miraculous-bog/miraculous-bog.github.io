@@ -15,7 +15,7 @@ let arrA = [6.3, 2.5, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2];
 function getAverage(arr){
 	sum = 0;
   const fil = arr.filter(el => el%1 === 0);
-  arr.forEach((arrEl) => {
+  fil.forEach((arrEl) => {
   	sum += arrEl;
   }); return sum / fil.length;
 }
@@ -31,7 +31,7 @@ function getMediana(arr){
 	if ((arr.length % 2) === 0){
 		return (sorted[i] + sorted[i+1]) / 2;
 	} else {
-		return sorted[Math.ceil(i)];
+		return sorted[Math.floor(i)];
 	}
 }
 console.log(getMediana(arrMed));
