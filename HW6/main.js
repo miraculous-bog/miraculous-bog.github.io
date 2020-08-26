@@ -27,12 +27,15 @@ const students = [{
 let a = +(prompt("ведіть номер студента (1-3)"));
 
 // коректно виводимо перелік предметів певного студента
-let num = [];
-let arrOfSub = Object.keys(students[0].subjects);
-  arrOfSub.forEach((el,i) => {
-  num[i] = el.slice(0, 1).toUpperCase() + el.slice(1).toLowerCase().replace('_', ' ');
-}); 
-console.log((students[a-1].name) +' '+ num);
+const genSubjects = () => {
+  let num = [];
+  let arrOfSub = Object.keys(students[0].subjects);
+    arrOfSub.forEach((el,i) => {
+    num[i] = el.slice(0, 1).toUpperCase() + el.slice(1).toLowerCase().replace('_', ' ');
+  });
+  return (students[a-1].name) +': '+ num;
+}
+console.log(genSubjects());
 
 // ф-ція знаходження сер.значення оцінок студента
 function averageValue(studAv) {
