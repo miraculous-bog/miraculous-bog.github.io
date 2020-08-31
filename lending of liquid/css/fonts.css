@@ -1,0 +1,46 @@
+@font-face {
+font-family: 'Roboto';
+src: url('../fonts/Roboto/Roboto-Refular.eot');
+src: url('../fonts/Roboto/Roboto-Refular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Roboto/Roboto-Refular.woff') format('woff'),
+url('../fonts/Roboto/Roboto-Refular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Roboto';
+src: url('../fonts/Roboto/Roboto-Refular.eot');
+src: url('../fonts/Roboto/Roboto-Refular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Roboto/Roboto-Refular.woff') format('woff'),
+url('../fonts/Roboto/Roboto-Refular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'DancingScript-Regular';
+src: url('../fonts/Dancing script/DancingScript-Regular.eot');
+src: url('../fonts/Dancing script/DancingScript-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Roboto/DancingScript-Regular.woff') format('woff'),
+url('../fonts/Dancing script/DancingScript-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Peace Sans';
+src: url('../fonts/Peace Sans/Peace Sans.eot');
+src: url('../fonts/Peace Sans/Peace Sans.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Peace Sans/Peace Sans.woff') format('woff'),
+url('../fonts/Peace Sans/Peace Sans.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Nirmala';
+src: url('../fonts/Nimrala.eot');
+src: url('../fonts/Nimrala.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Nimrala.woff') format('woff'),
+url('../fonts/Nimrala.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
