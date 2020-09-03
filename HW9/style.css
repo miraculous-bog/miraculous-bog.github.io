@@ -1,0 +1,21 @@
+	.container {
+		margin: 0 auto;
+		padding: 0;
+		width: 250px;
+		border: 1px solid black;
+		height: 250px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+		justify-content: center;
+	}
+	.grid-el {
+		height: 50px;
+		width: 50px;
+		background: white;
+		border: 1px solid black;
+		color: white;
+	}
+	.bb {
+		position: absolute;
+		left: 44%;
+	}
