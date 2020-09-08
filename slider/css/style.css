@@ -16,7 +16,7 @@ nav {
 .wrapper {
 	width: 1000px;
 	margin: 0 auto;
-	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	 box-shadow: 0 20px 20px 0 rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
 
 	background: url(../img/wrap.jpg);
 }
@@ -934,3 +934,11 @@ span.sim-dot:nth-child(1) {
 }
 /* конец кнопки звонка */
 
+.price-popup-block p {
+	font-size: 30px;
+	color: black;
+	margin-left: 40%;
+}
+.price-popup-block p span {
+	font-size: 20px;
+}

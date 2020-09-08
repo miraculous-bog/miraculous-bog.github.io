@@ -1,6 +1,7 @@
 @media screen and (max-width:760px) {
 	body {
 		width: auto; 
+		background: url(../img/bgBody2.jpg);
 	}
 	.toggle{
 		clear: both;
@@ -128,6 +129,7 @@
 	width: 100%;
 	margin: 0 auto;
 /*	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+background: url(../img/wrap2.jpg);
 }
 .tradeBlock {
 	width: 100%;
@@ -176,11 +178,11 @@ footer {
 }
 #popup {
 	width: 300px;
-	height: 80vh;
+	height: auto;
 	padding: 10px;
 }
 .wrapper-info {
-	height: 95%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 }
