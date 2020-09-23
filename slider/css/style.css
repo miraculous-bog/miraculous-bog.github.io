@@ -4,9 +4,12 @@
 	padding: 0;
 }
 body {
-		font-family: 'pribambasregular', sans-serif;
-	font-family: 'pribambasregular', sans-serif;
+		font-family: 'nanumgothicbold', sans-serif;
+	font-family: '', sans-serif;
 	background: url(../img/bgBody.jpg) no-repeat;
+}
+.eng {
+			font-family: 'nanumgothicbold', sans-serif;
 }
 nav {
 	max-width: 900px;
@@ -189,7 +192,7 @@ form {
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			font-size: 30vh;
+			font-size: 20vh;
 			z-index: -2;
 			font-weight: 700;
 			padding-left: 10%;
@@ -319,7 +322,8 @@ filter: invert(1);
 	border-radius: 100px;
 }
 .hover-block h2{
-	font-size: 25px;
+	font-size: 20px;
+	font-weight: 600;
 	color: white;
 	padding: 20% 0 0 0%;
 	text-align: center;

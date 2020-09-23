@@ -1,0 +1,64 @@
+<!DOKTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="Play_Button">Play</button>
+<button class="Play_Button">Play</button>
+<button class="Play_Button">Play</button>
+<button class="Play_Button">Play</button>
+<button class="Play_Button">Play</button>
+<button class="Play_Button">Play</button>
+
+	<script>
+const tone = ['audio/1.mpeg', 'audio/2.mpeg', 'audio/3.mpeg', 'audio/4.mpeg', 'audio/5.mpeg', 'audio/6.mpeg'];
+
+function toneVoice(num) {
+    let newAudio = document.createElement("audio");
+    newAudio.src = num;
+    newAudio.play();
+    return audio;
+};
+
+let playButton = document.querySelectorAll('button');
+for (let i = 0; i < playButton.length; i++) {
+    playButton[i].addEventListener('click', function() {
+        toneVoice(tone[i]); }, false);
+};
+
+function playVoice(k) {
+    switch (k.keyCode) {
+        case 68:toneVoice(tone[0]);
+            break;
+        case 70:toneVoice(tone[1]);
+            break;
+        case 71:toneVoice(tone[2]);
+            break;
+        case 72:toneVoice(tone[3]);
+            break;
+        case 73:toneVoice(tone[4]);
+            break;
+        case 74:toneVoice(tone[5]);
+            break;
+    };
+};
+	document.addEventListener("keydown", playVoice);
+	</script>
+</body>
+</html>
+
+
+<!-- 
+function Play_Audio(){
+     var audioElement = document.createElement("audio");
+     audioElement.src = "https://raw.githubusercontent.com/Metastruct/garrysmod-chatsounds/master/sound/chatsounds/autoadd/snoop_dogg/hold%20up%20wait.ogg";
+     document.getElementById("Play_Button").addEventListener("click", function(music){
+       audioElement.play();
+     }, false);
+}
+Play_Audio();
+<button id="Play_Button">Play</button> -->
