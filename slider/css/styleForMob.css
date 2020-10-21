@@ -7,12 +7,20 @@
 		clear: both;
 		display: block;
 		text-align: center;
-		font-size: 18px;
+		font-size: 35px;
 		line-height: 40px;
 		width: auto;
-		color: black;
-		background: #324b4e;
+		color: white;
+		background: black;
 		transition: all .1s linear;
+		height: 70px;
+	}
+	.toggle-bla {
+		display: flex;
+		justify-content: space-around;
+	}
+	.toggle-bla img, .toggle-bla div{
+		margin: 10px;
 	}
 	#checkbox-menu:checked + label .touch li{
 		opacity: 1;
@@ -54,6 +62,7 @@
 	.head {
 		display: flex;
 		flex-direction: column;
+		height: 0;
 	}
 	.search {
 		display: none;
@@ -64,6 +73,9 @@
 	.img-logo {
 		background: url(../img/logonewmin.jpg) no-repeat;
 		max-width: 373px;
+	}
+	.header-logo {
+		display: none;
 	}
 	nav {
 		margin-left: 0;

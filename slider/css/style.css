@@ -21,7 +21,7 @@ nav {
 	margin: 0 auto;
 	 box-shadow: 0 20px 20px 0 rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
 
-	background: url(../img/wrap.jpg);
+	background: url(../img/Twrap2.jpg);
 }
 
 
@@ -597,19 +597,21 @@ header.hidsel, nav.hidsel, .container.hidsel {
 }
 .num {
 	text-align: center;
-	position: absolute;
-	left: 55%;
-	top: 10%;
+	position: relative;
+	left: 60%;
+	top: -55%;
 	border-radius: 50%;
 	width: 20px;
 	height: 20px;
 	background: red;
 	color: white;
+	font-size: 12px;
 }
-
-
-
-
+.num p{
+position: absolute;
+bottom: -9px;
+left: 6px;
+}
 /*-------------------------------------*/
 .sim-slider img {
   width: 250px; !important;
