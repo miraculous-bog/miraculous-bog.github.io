@@ -35,7 +35,7 @@ background: url(../img/Twrap2.jpg);
 .buttons{
   position:relative;
   padding-top:30px;
-  margin-right:60px;
+  margin-right:20px;
 }
 .delete-btn{
   display:inline-block;
@@ -57,7 +57,8 @@ background: url(../img/Twrap2.jpg);
   background-repeat:no-repeat;cursor:pointer;
 }
 .image{
-  margin-left:60px;
+  margin-left:20px;
+  margin-right: 20px;
 }
 .description-c
 {padding-top:10px;
@@ -68,7 +69,7 @@ background: url(../img/Twrap2.jpg);
   display:block;
   font-size:14px;
   color:#43484D;
-  font-weight:400;
+  font-weight:600;
 }
 .description-c span:first-child{
   margin-bottom:5px;
@@ -99,10 +100,10 @@ button[class*=btn]{
   cursor:pointer;
 }
 .minus-btn img{
-  margin-bottom:3px;
+  padding-bottom:0px;
 }
 .plus-btn img{
-  margin-top:2px;
+
 }
 button:focus,input:focus{
   outline:0;
@@ -163,18 +164,38 @@ button:focus,input:focus{
   height:auto;
   flex-wrap:wrap;
   justify-content:center;
+  padding-right: 20%;
+}
+.image {
+  margin: 0;
 }
 .image img{
   width:140px;
   height:140px;
 }
+.quantity {
+  padding-top: 5px;
+}
 .quantity,.description{
   width:100%;
-  text-align:center;
-  margin:6px 0;
+  margin:6px 0 6px 40%;
 }
 .buttons{
   margin-right:20px;
+}
+button[class*=btn] {
+width: 40px;
+height: 40px;
+}
+.description-c {
+  width: 300px;
+  margin-top: 20px;
+}
+.description-c span {
+  padding-left: 40%;
+}
+.total-price {
+  margin-left: 22%;
 }
 .description
 {
