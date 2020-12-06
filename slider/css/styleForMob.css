@@ -14,10 +14,10 @@
 	.container:before {
 			content: '';
 			position: absolute;
-			top: 45%;
-			left: 13%;
-			width: 74%;
-			height: 8%;
+			top: 12%;
+			left: 1%;
+			width: 98%;
+			height: 23%;
 			background: #CCCCCC;
 			z-index: -2;
 			border-radius: 30px;
@@ -37,8 +37,8 @@
 		bottom: 112%;
 	}
 			.icons .controlers {
-			left: 12%;
-			top: 45.2%;
+			left: -10%;
+			top: 15.2%;
 		}
 	.content {
 		margin: 0;
@@ -47,8 +47,8 @@
 	}
 	.content .bannerImg {
 		margin: 20px 0;
-		width: 250px;
-		height: 250px;
+		width: 210px;
+		height: 210px;
 	}
 	.content .bannerText {
 		max-width: 100%;
@@ -59,6 +59,9 @@
 			bottom: 0%;
 			left: 10%;
 			font-size: 8vh;
+	}
+	.icons .controlers li:nth-child(1){
+		margin-left: 13%;
 	}
 	.icons .controlers li:nth-child(2){
 		margin-left: 58%;
@@ -247,15 +250,15 @@ span.sim-dot:nth-child(1) {
   }
 */
 }
-@media (max-width: 321px) {
-	.content .bannerText a {
+@media (min-width: 361px) {
+/*	.content .bannerText a {
  	   bottom: 102%;
  	   left: 21%;
 	}
 	.icons .controlers li:nth-child(2){
 		margin-left: 53%;
-	}
+	}*/
 	.icons .controlers li:nth-child(1){
-		margin-left: 2%;
+		margin-left: 15%;
 	}
 }
