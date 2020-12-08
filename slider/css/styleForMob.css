@@ -61,10 +61,10 @@
 			font-size: 8vh;
 	}
 	.icons .controlers li:nth-child(1){
-		margin-left: 13%;
+		margin-left: 11%;
 	}
 	.icons .controlers li:nth-child(2){
-		margin-left: 58%;
+		margin-left: 62%;
 	}
 		.icons {
 			padding: 20px 0;
@@ -251,14 +251,22 @@ span.sim-dot:nth-child(1) {
 */
 }
 @media (min-width: 361px) {
-/*	.content .bannerText a {
- 	   bottom: 102%;
- 	   left: 21%;
-	}
-	.icons .controlers li:nth-child(2){
-		margin-left: 53%;
-	}*/
 	.icons .controlers li:nth-child(1){
 		margin-left: 15%;
+	}
+}
+@media (min-width: 328px) {
+	.icons .controlers li:nth-child(1){
+		margin-left: 12%;
+	}
+}
+@media (min-width: 335px) {
+	.icons .controlers li:nth-child(1){
+		margin-left: 13%;
+	}
+}
+@media (min-width: 355px) {
+	.icons .controlers li:nth-child(1){
+		margin-left: 14%;
 	}
 }

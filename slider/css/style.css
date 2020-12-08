@@ -1102,7 +1102,7 @@ form {
 		position: absolute;
 		left: 25%;
 		width: 50%;
-		height: 4px;
+		height: 2px;
 		top: 45%;
 		transition: all 0.3s ease 0s;
 	}
@@ -1111,15 +1111,15 @@ form {
 		background: black;
 		position: absolute;
 		width: 50%;
-		height: 4px;
+		height: 2px;
 		left: 25%;
 		transition: all 0.3s ease 0s;
 	} 
 	.header_burger:before {
-		top: 20%;
+		top: 35%;
 	}
 	.header_burger:after {
-		bottom: 20%;
+		bottom: 40%;
 	}
 	.header_burger.activem span {
 		transform: scale(0);
@@ -1130,7 +1130,7 @@ form {
 	}
 	.header_burger.activem:after {
 		transform: rotate(-45deg);
-		bottom: 16;
+		bottom: 18;
 	}
 	.header_menu {
 		position: fixed;
