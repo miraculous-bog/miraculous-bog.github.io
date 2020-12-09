@@ -1126,7 +1126,7 @@ form {
 	}
 	.header_burger.activem:before {
 		transform: rotate(45deg);
-		top: 19;
+		top: 20;
 	}
 	.header_burger.activem:after {
 		transform: rotate(-45deg);
