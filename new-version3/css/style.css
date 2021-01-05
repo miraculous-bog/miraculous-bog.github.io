@@ -1211,11 +1211,11 @@ form {
 	}
 	.header_burger.activem:before {
 		transform: rotate(45deg);
-		top: 20;
+		top: 45%;
 	}
 	.header_burger.activem:after {
 		transform: rotate(-45deg);
-		bottom: 18;
+		bottom: 47%;
 	}
 	.header_menu {
 		position: fixed;
