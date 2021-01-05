@@ -7,7 +7,7 @@ function init() {
 
 function goodsOut(data) {
     // вывод на страницу
-    e.preventDefault();
+    goodsOut.preventDefault();
 	  $.getJSON('goods.json', function (data) {
 			let goods = data;
             let out = '';
@@ -41,7 +41,7 @@ function goodsOut(data) {
 
 function addToCart() {
     //добавляем товар в корзину
-    e.preventDefault();
+    addToCart.preventDefault();
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==undefined) {
