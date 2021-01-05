@@ -40,6 +40,7 @@ function goodsOut(data) {
 
 function addToCart() {
     //добавляем товар в корзину
+    event.preventDefault();
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==undefined) {
