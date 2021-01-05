@@ -7,7 +7,6 @@ function init() {
 
 function goodsOut(data) {
     // вывод на страницу
-    goodsOut.preventDefault();
 	  $.getJSON('goods.json', function (data) {
 			let goods = data;
             let out = '';
