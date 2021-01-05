@@ -38,7 +38,7 @@ function goodsOut(data) {
   $('.add-to-cart').on('click', addToCart);
 }
 
-function addToCart() {
+function addToCart(event) {
     //добавляем товар в корзину
     event.preventDefault();
     var id = $(this).attr('data-id');
