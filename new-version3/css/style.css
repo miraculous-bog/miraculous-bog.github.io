@@ -536,10 +536,16 @@ footer {
 	color: black;
 	border: 1px solid grey;
 }
-#popup.active {
+#popupBasket.active {
 	visibility: visible;
 	opacity: 1;
 	transition: 0.5s;
+}
+.wrapper#blur.active {
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+
 }
 #popupBasket {
 	position: fixed;
