@@ -41,27 +41,29 @@ body {
 /*slider content */
 
 .container {
-			position: relative;
-			padding: 0 ;
-			min-height: 70vh;
-			width: 1000px;
-			margin: 0 auto;
-		}
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Если где-то внутри слайдера будут изображения,
+то нужно задать им pointer-events: none,
+чтобы они не перетаскивались мышью */
 		.container:before {
 			content: '';
 			position: absolute;
-			top: 10%;
-			right: 5%;
+			top: 1%;
+			right: 6.5%;
 			width: 250px;
-			height: 90%;
+			height: 65vh;
 			background: #333;
 			z-index: -2;
 		}
 		.container:after {
 			content: 'Go_Snus';
 			position: absolute;
-			bottom: 0;
-			left: 0;
+			bottom: 5%;
+			left: 10%;
 			font-size: 20vh;
 			z-index: -2;
 			font-weight: 700;
@@ -69,34 +71,174 @@ body {
 			color: black;
 			opacity: 0.1;
 	}
-		.content {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-top: px;
+
+
+  .slider {
+      position: relative;
+      overflow: hidden;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* стили для обёртки, в которой заключены слайды */
+    .slider__wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* стили для контейнера слайдов */
+    .slider__items {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    /* стили для слайдов */
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    /* стили для кнопок "вперед" и "назад" */
+    .slider__control {
+      position: absolute;
+      top: 87%;
+      right: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: 0.9;
+    }
+
+    .slider__control_prev {
+      right: 19%;
+    }
+
+    .slider__control_next {
+      right: 14%;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_prev::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_next::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    /* стили для индикаторов */
+    .slider__indicators {
+      position: absolute;
+      right: -2%;
+      bottom: 10px;
+      z-index: 15;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      margin-right: 15%;
+      margin-left: 15%;
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .slider__indicators li {
+      box-sizing: content-box;
+      flex: 0 1 auto;
+      width: 30px;
+      height: 4px;
+      margin-right: 3px;
+      margin-left: 3px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.5);
+      background-clip: padding-box;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+
+    .slider__indicators li.active {
+      background-color: #fff;
+    }
+
+    img {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+    }
+
+
+    .slider__item {
+      height: 470px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider__item_inner {
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      top: 36px;
+      bottom: 36px;
+      color: #fff;
+    }
+
+    .slider__item_img {
+      flex: 0 0 100px;
+      max-width: 100px;
+
+    }
+		.slider__item_inner img {
+			position: absolute;
+			top:-3%;
+			right: -8%;
+			width: 350px;
+			height: 350px;
+			object-fit: cover;
+			transition: 0.5s;
 		}
-		.content .bannerText {
-			position: relative;
-			max-width: 400px;
-			margin-left: 50px;
-		}
-		.content .bannerText div {
-			display: none;
-		}
-		.content .bannerText div.active {
-			display: initial;
-		}
-		.content .bannerText h2 {
+
+		.slider__item_inner h2 {
 			font-size: 29px;
 			font-weight: 600;
+			color: black;
+			margin-top: 10%;
 		}
-		.content .bannerText p{
+		.slider__item_inner p{
 			font-size: 17px;
 			color: #333;
 			line-height: 1.5em;
 			margin: 20px 0;
+			width: 50%;
 		}
-		.content .bannerText a{
+		.slider__item_inner a{
 			position: relative;
 			display: inline-block;
 			text-transform: uppercase;
@@ -110,68 +252,11 @@ body {
 			transition: all 0.5s;
 			z-index: 10;
 		}
-		.content .bannerText a:hover {
+		.slider__item_inner a:hover {
 			color: black;
 			background-image: url(../img/btn-bgw12.png);
 		}
 
-/*		.content .bannerText a:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left:0;
-			width: 60px;
-			height: 100%;
-			background: #CCCCFF;
-			z-index: -1;
-			transition: 0.5s ease-in-out;
-		}
-		.content .bannerText a:hover:before {
-						width: 100%;
-		}*/
-		.content .bannerImg {
-			position: relative;
-			width: 350px;
-			height: 350px;
-		}
-		.content .bannerImg img {
-			position: absolute;
-			top:10%;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			transition: 0.5s;
-			opacity: 0;
-		}
-		.content .bannerImg img.active{
-			opacity: 1;
-		}
-		.icons {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 50px 0;
-		}
-		.icons .sci,
-		.icons .controlers{
-			position: absolute;
-			display: flex;
-		}
-		.icons .controlers {
-			right: 12%;
-			top: 80%;
-		}
-.icons .controlers li {
-list-style: none;
-margin-left: 20px;
-cursor: pointer;
-filter: invert(1);
-	transition: 0.5s ease-in-out;
-}
-.icons .controlers li:hover {
-	opacity: 0.5;
-}
 .tradeBlock {
 	margin: 100px 50px 0 50px;
 	width: 100%;
