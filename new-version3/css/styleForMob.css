@@ -36,8 +36,8 @@
 			border-radius: 30px;
 	}
 	.container:after {
-			bottom: 15%;
-			left: 4%;
+			bottom: 1%;
+			left: 19%;
 			font-size: 7vh;
 			padding-left: 0%;
 	}

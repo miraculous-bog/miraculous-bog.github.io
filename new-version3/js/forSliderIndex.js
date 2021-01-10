@@ -213,5 +213,5 @@
       }());
 
       slideShow('.slider', {
-        isAutoplay: false
+        isAutoplay: true
       });
