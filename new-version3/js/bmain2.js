@@ -60,7 +60,7 @@ function showCart() {
             $('.plus-goods2').on('click', plusGoods);
             $('.minus-goods2').on('click', minusGoods);
         });
-    $.getJSON('goods.json', function (data) {
+/*    $.getJSON('goods.json', function (data) {
    let goods = data;
             let out = '';
    let coc = 0; 
@@ -71,7 +71,7 @@ function showCart() {
             $('.tinfo').html(out); 
 
         });
-    }
+    }*/
 }
 
 function delGoods() {
