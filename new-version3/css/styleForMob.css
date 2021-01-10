@@ -203,7 +203,7 @@ background-repeat: repeat-y;
 			text-decoration: none;
 			padding: 14px;
 			color: white;
-			background-image: url(../img/btn-bg12.png);
+			background-image: url(../img/btn-bg13.png);
 			background-size: cover;
 			transition: all 0.5s;
 			z-index: 10;
@@ -211,7 +211,7 @@ background-repeat: repeat-y;
 		}
 		.a-trade:hover {
 			color: black;
-			background-image: url(../img/btn-bgw12.png);
+			background-image: url(../img/btn-bgw14.png);
 		}
 footer {
 	height: 400px;
