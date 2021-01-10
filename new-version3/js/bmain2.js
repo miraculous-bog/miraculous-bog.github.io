@@ -32,8 +32,7 @@ function showCart() {
    out += </div>;
    out += <div class="total-price"><p>${cart[id]*goods[id].cost}</p></div>;
    out += </div>; */
-   out += `<h3>Товары в корзине</h3>`;
-   out += `<div class="one-tov">`;
+   out += `<h3>Товары в корзине</h3><div class="one-tov">`;
    out += `<div class="pop-img">`;
    out += `<img src="${goods[id].img}" alt="">`;
    out += `</div>`;
