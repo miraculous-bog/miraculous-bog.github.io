@@ -20,6 +20,28 @@ g.onmousemove = function(e) {
 	m.style.background = 'black';
 }
 }
+function toggleB(){
+	var blur = document.getElementById('blur');
+	blur.classList.toggle('active');
+	var popup = document.getElementById('popupBasket');
+	popup.classList.toggle('active');
+	var hid1 = document.querySelector('header');
+	var hid2 = document.querySelector('nav');
+	hid1.classList.toggle('hidsel');
+	hid2.classList.toggle('hidsel');
+	var hid3 = document.querySelector('.container');
+			hid3.classList.toggle('hidsel');
+}
+var slide = document.getElementById('slide');
+var	g = document.getElementById('g');
+var	m = document.getElementById('m');
+g.onmousemove = function(e) {
+	var x = e.clientX;
+	slide.style.left = x + 'px';
+	if (slide < 300 + 'px') {
+	m.style.background = 'black';
+}
+}
 
 $(".arrow-4").click(function() {
     $(this).toggleClass("open");

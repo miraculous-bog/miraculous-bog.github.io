@@ -300,6 +300,44 @@
 					</div>
 			</div>
 		</div>
+					<div id="popupBasket">
+				<div class="close-pop p-two" onclick="toggleB()">			
+				</div>
+					<div class="wrapper-info-basket">
+						<h3>Товары в корзине</h3>
+						<div class="one-tov">
+							<div class="pop-img">
+								<img src="img/snus3.png" alt="">
+							</div>
+							<h2>Corvus Extreme Snus</h2>
+							<div class="sum-product">
+								<p>210грн&times;</p>
+								<div class="quantity">
+							          <button class="minus-btn" type="button" name="button">
+							            <img src="img/minus.svg" alt="" />
+							          </button>
+							          <p>1</p>
+							           <button class="plus-btn" type="button" name="button">
+							            <img src="img/plus.svg" alt="" />
+							          </button>
+						        </div>
+								<p>&#61; 210 грн</p>
+							</div>
+							<div class="close-this">
+								
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="total-point">
+							<h3>Итог <span>300грн</span></h3>
+						</div>
+						<a href="form.html">
+				     		<div class="tbuy">
+      		 					<h3>Оформить заказ</h3>
+      						</div>
+      					</a>
+					</div>
+			</div>
 <div type="button" class="callback-bt">
 	<a href="tg://resolve?domain=Lukanbukan">
     	<div class="text-call">
@@ -308,8 +346,8 @@
    		</div>
 	</a>
 </div>
-<div type="button" class="basket-b">
-	<a href="basket.html">
+<div type="button" class="basket-b" onclick="toggleB()">
+	<a href="#">
     	<div class="text-basket-b">
     		<img src="img/icons-basket.png" alt="" id="basketImg1" class="basketImg">
        		<span>Корзина</span>

@@ -456,6 +456,27 @@ footer {
 	opacity: 1;
 	transition: 0.5s;
 }
+#popupBasket {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 800px;
+	height: 60vh;
+	padding: 30px;
+	box-shadow: 0 5px 30px rgba(0,0,0,.30;);
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	color: black;
+	border: 1px solid grey;
+}
+#popupBasket.active {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
 .wrapper-info {
 	margin: 10px;
 	border: 1px solid black;
@@ -1250,6 +1271,102 @@ form {
 .down {
 	padding: 0px 0px 0px 0;
 }
+.p-two {
+	top: 0%;
+}
+
+.wrapper-info-basket h3 {
+	font-size: 23px;
+	font-weight: 600;
+}
+.one-tov {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	margin-top: 30px;
+	padding: 10px;
+}
+.clear {
+	clear: both;
+}
+.pop-img  {
+	float: left;
+}
+.pop-img img {
+	width: 80px;
+	height: 80px;
+}
+.one-tov h2{
+	margin: 30px 0 0 120px;
+	font-size: 18px;
+	font-weight: 600;
+	position: absolute;
+}
+.sum-product {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	width: 300px;
+	margin-left: 400px;
+	margin-top: 10px;
+}
+.sum-product p{
+	font-size: 20px;
+	color: grey;
+	font-weight: 500;
+	padding-top: 15px;
+}
+.quantity{
+  padding-top:10px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.quantity p{
+  padding-top: 5%;
+  font-size: 20px;
+}
+button[class*=btn]{
+  width:30px;
+  height:30px;
+  background-color:#E1E8EE;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+}
+.minus-btn img{
+  padding-bottom:0px;
+}
+.plus-btn img{
+
+}
+.total-point {
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 600;
+	margin-left: 80%;
+	margin-top: 10px;
+}
+.tbuy {
+    height: 50px;
+    width: 100%;
+      font-size:15px;
+  color:#43484D;
+  font-weight:600;
+  text-align: center;
+        /* border-radius: 26px;*/
+         cursor: pointer;
+         transition: all 0.5s;
+         margin-top: 10px;
+  }
+.tbuy:hover {
+    background: #324b4e;
+    color: white;
+  }
+  .tbuy h3 {
+        font-weight:500;
+       font-size:19px;
+              padding-top: 15px;
+  }
 @media (max-width: 760px) {
 	.down {
 		padding: 0px 0px 0px 0;
