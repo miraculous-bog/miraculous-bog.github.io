@@ -20,7 +20,7 @@ function goodsOut(data) {
 
         });
 
-          $.getJSON('goods.json', function (data) {
+/*          $.getJSON('goods.json', function (data) {
             let goods = data;
                  let outS='';
                 for (var key in data) {
@@ -37,7 +37,7 @@ function goodsOut(data) {
                 }
                         $('.slider__items').html(outS);
               $('.add-to-cart').on('click', addToCart);
-        });
+        });*/
     console.log(data); 
             let out='';  
     for (var key in data) {
