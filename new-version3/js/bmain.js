@@ -2,14 +2,14 @@ var cart = {}; // корзина
 
 function init() {
     //вычитуем файл goods.json
-    $.getJSON("goods.json", goodsOut2);
+/*    $.getJSON("goods.json", goodsOut2);*/
     $.getJSON("goods.json", goodsOut);
 } 
 
-function goodsOut2(data) {
+/*function goodsOut2(data) {
             let goods = data;
             let outS='';
-                for (var key in data) {
+                for (let key in data) {
                     if (data[key].top === 1) {
                         outS += '<div class="slider__item">';
                         outS += '<span class="slider__item_inner">';
@@ -23,7 +23,7 @@ function goodsOut2(data) {
                 }
              $('.slider__items').html(outS);
               $('.add-to-cart').on('click', addToCart);
-}
+}*/
 function goodsOut(data) {
     // вывод на страницу
 /*--*/
@@ -40,24 +40,6 @@ function goodsOut(data) {
 
         });
 
-/*          $.getJSON('goods.json', function (data) {
-            let goods = data;
-                 let outS='';
-                for (var key in data) {
-                    if (data[key].top === 1) {
-                        outS += '<div class="slider__item">';
-                        outS += '<span class="slider__item_inner">';
-                        outS += `<img src="${data[key].img}" alt="">`;
-                        outS += `<h2>${data[key].name}</h2>`;
-                        outS += `<p>${data[key].desciption}</p>`;
-                        outS += '<a href="" class="add-to-cart">Купить</a>';
-                        outS += '</span>';
-                        outS += '</div>';
-                    }
-                }
-                        $('.slider__items').html(outS);
-              $('.add-to-cart').on('click', addToCart);
-        });*/
     console.log(data); 
             let out='';  
     for (var key in data) {
