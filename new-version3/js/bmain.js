@@ -6,7 +6,7 @@ function init() {
 } 
 function goodsOut(data) {
     // вывод на страницу
-
+/*--*/
 
 	  $.getJSON('goods.json', function (data) {
 			let goods = data;
