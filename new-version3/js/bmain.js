@@ -19,7 +19,21 @@ function goodsOut(data) {
 
         });
     console.log(data);
-    let out='';   
+    let outS='';
+    for (var key in data) {
+        if (data[key].top === 1) {
+            outS += '<div class="slider__item">';
+            outS += '<span class="slider__item_inner">';
+            outS += `<img src="${data[key].img}" alt="">`;
+            outS += `<h2>${data[key].name}</h2>`;
+            outS += `<p>${data[key].desciption}</p>`;
+            outS += '<a href="" class="add-to-cart">Купить</a>';
+            outS += '</span>';
+            outS += '</div>';
+        }
+    }
+        let out='';
+  $('.add-to-cart').on('click', addToCart);    
     for (var key in data) {
         out +='<div class="trade-block anim-items anim-no-hide">';
         	out +=`<h2 class="eng eng2 hide-this">${data[key].name}</h2>`;  
@@ -35,23 +49,11 @@ function goodsOut(data) {
         out +=`<a href="#" class="add-to-cart a-trade hide-this" data-id="${key}">Купить</a>`;
         out +='</div>';
     }
+    $('.slider__items').html(outS);
     $('.tradeNet').html(out);
   $('.add-to-cart').on('click', addToCart);
 }
-/*    for (var key in data) {
-        if (data[key].top === 1) {
-            out += '<div class="slider__item">';
-            out += '<span class="slider__item_inner">';
-            out += `<img src="${data[key].img}" alt="">`;
-            out += `<h2>${data[key].name}</h2>`;
-            out += `<p>${data[key].desciption}</p>`;
-            out += '<a href="" class="add-to-cart">Купить</a>';
-            out += '</span>';
-            out += '</div>';
-        }
-    }
-    $('.slider__items').html(out);
-  $('.add-to-cart').on('click', addToCart); */
+
 function addToCart(event) {
     //добавляем товар в корзину
     event.preventDefault();
