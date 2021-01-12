@@ -1043,7 +1043,9 @@ span.sim-dot:nth-child(1) {
         font-size:34px;
         transition:.3s;
         line-height: 66px;transition: .5s ease-in-out;
-        margin: 10px 10px 0 0; 
+        margin: 9px 10px 0 0;
+    width: 40px;
+    height: 40px;
 }
 .basketImg {
 		    animation: 1200ms ease 0s normal none 1 running shake;

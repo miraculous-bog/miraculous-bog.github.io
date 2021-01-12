@@ -193,7 +193,14 @@ background-repeat: repeat-y;
 .h-des {
 	width: ;
 }
-
+.pricehide {
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 50%;
+}
 		.a-trade {
 			position: relative;
 			display: inline-block;

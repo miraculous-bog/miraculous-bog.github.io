@@ -31,6 +31,7 @@ function goodsOut(data) {
         		out +=`<h2 class="eng">${data[key].name}</h2>`;
         		out +=`<div class="trade-ico"><a href="#" onclick="toggle()"><img src="img/magnifier.png"></a><a href="#" class="add-to-cart" data-id="${key}"><img src="img/basket.png"></a></div>`;
         out +='</div>';
+        out +=`<p class="pricehide hide-this">${data[key].cost}</p>`;
         out +=`<a href="#" class="add-to-cart a-trade hide-this" data-id="${key}">Купить</a>`;
         out +='</div>';
     }
