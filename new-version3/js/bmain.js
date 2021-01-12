@@ -19,7 +19,7 @@ function goodsOut(data) {
 
         });
     console.log(data);
-    let outS='';
+/*    let outS='';
     for (var key in data) {
         if (data[key].top === 1) {
             outS += '<div class="slider__item">';
@@ -31,7 +31,7 @@ function goodsOut(data) {
             outS += '</span>';
             outS += '</div>';
         }
-    }
+    }*/
         let out='';
   $('.add-to-cart').on('click', addToCart);    
     for (var key in data) {
@@ -49,7 +49,7 @@ function goodsOut(data) {
         out +=`<a href="#" class="add-to-cart a-trade hide-this" data-id="${key}">Купить</a>`;
         out +='</div>';
     }
-    $('.slider__items').html(outS);
+/*    $('.slider__items').html(outS);*/
     $('.tradeNet').html(out);
   $('.add-to-cart').on('click', addToCart);
 }
