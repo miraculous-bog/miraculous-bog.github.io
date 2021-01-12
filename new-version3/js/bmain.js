@@ -21,12 +21,26 @@ function goodsOut(data) {
     console.log(data);
     let out='';
     for (var key in data) {
+        if (data[key].top === 1) {
+            out += '<div class="slider__item">';
+            out += '<span class="slider__item_inner">';
+            out += `<img src="${data[key].img}" alt="">`;
+            out += `<h2>${data[key].name}</h2>`;
+            out += `<p>${data[key].desciption}</p>`;
+            out += '<a href="" class="add-to-cart">Купить</a>';
+            out += '</span>';
+            out += '</div>';
+        }
+    }
+    $('.slider__items').html(out);
+  $('.add-to-cart').on('click', addToCart);    
+    for (var key in data) {
         out +='<div class="trade-block anim-items anim-no-hide">';
         	out +=`<h2 class="eng eng2 hide-this">${data[key].name}</h2>`;  
 			out +=`<img src="${data[key].img}" onclick="toggle()">`;
-			if (data[key].top === 1) {
+/*			if (data[key].top === 1) {
 				out +=`<div class="top-product"><p>хит</p></div>`;
-			}
+			}*/
        		out +='<div class="hover-block">';
         		out +=`<h2 class="eng">${data[key].name}</h2>`;
         		out +=`<div class="trade-ico"><a href="#" onclick="toggle()"><img src="img/magnifier.png"></a><a href="#" class="add-to-cart" data-id="${key}"><img src="img/basket.png"></a></div>`;
