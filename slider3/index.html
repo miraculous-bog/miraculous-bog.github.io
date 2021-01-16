@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 		<link href="css/fonts.css" type="text/css" rel="stylesheet" />
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link href="css/style2.css" type="text/css" rel="stylesheet" />
 	<link href="css/styleForMob.css" type="text/css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/bmain.js"></script>
@@ -32,7 +32,7 @@
 						<a href="basket.html"><div class="toggle-bla-img">
 							<img src="img/basket2.png" alt=""  width="40" height="40">
 							<div class="num">
-								<p class="counter-bas"></p>
+								<p>1</p>
 							</div></a>
 						</div>
 					<div class="header_burger">
@@ -65,39 +65,41 @@
 			</div>
 		</header>
 								<div class="down">
- <div class="container" id="blur">
-  <div class="slider">
-    <div class="slider__wrapper">
-      <div class="slider__items">
-        <div class="slider__item slider__item_1">
-          <span class="slider__item_inner">
- 				<img src="img/snus3.png" alt="">
- 				<h2>Mad Fatality</h2>
-				<p> Смесь внутри пакета распределена равномерно, пакеты практически не рвутся. Запах: мятного экстракта, не перечной мяты, но достаточно приятный. Вкус: сладковатая мята с тонкими оттенками ежевики</p>
-				<a href="">Купить</a>
-          </span>
-        </div>
-        <div class="slider__item slider__item_2">
-           <span class="slider__item_inner">
- 				<img src="img/snus2.png" alt="">
- 				<h2> Corvus Extreme Snus</h2>
-				<p>  Он мега-крепок, что мы боимся добавлять его на наш сайт. Многие жалуются, что после использования появляется одышка, повышенное сердцебиение, тошнота, головокружение (конечно это все защитная реакция организма).</p>
-				<a href="">Купить</a>
-          </span>
-        </div>
-        <div class="slider__item slider__item_3">
-          <span class="slider__item_inner">
- 				<img src="img/logo.png" alt="">
- 				<h2> CourvusHalk</h2>
-				<p>Снюс Corvus Hulk со вкусом киви 🥝, но на самом деле это вкус фейхоа (что-то среднее между киви и клубникой), но этот вкус очень приедается после нескольких вкидок и становится противно чувствовать даже запах.</p>
-				<a href="">Купить</a>
-          </span>
-        </div>
-      </div>
-      <a class="slider__control slider__control_prev" href="#" role="button"></a>
-      <a class="slider__control slider__control_next" href="#" role="button"></a>
-    </div>
-	</div>
+ <div class="container">
+	<div class="content">
+			<div class="bannerText" id="slideshowText">
+				<div class="active">
+					<h2 class="eng"><br>
+					Mad Fatality</h2>
+					<p class="">Смесь внутри пакета распределена равномерно, пакеты практически не рвутся. Запах: мятного экстракта, не перечной мяты, но достаточно приятный. Вкус: сладковатая мята с тонкими оттенками ежевики
+					</p>
+					<a href="#">Купить</a>
+				</div>
+				<div>
+					<h2> Corvus<br>
+					Extreme Snus</h2>
+					<p> Он мега-крепок, что мы боимся добавлять его на наш сайт. Многие жалуются, что после использования появляется одышка, повышенное сердцебиение, тошнота, головокружение (конечно это все защитная реакция организма).</p>
+					<a href="">Купить</a>
+				</div>
+								<div>
+					<h2> Courvus<br>
+					Halk</h2>
+					<p>Снюс Corvus Hulk со вкусом киви 🥝, но на самом деле это вкус фейхоа (что-то среднее между киви и клубникой), но этот вкус очень приедается после нескольких вкидок и становится противно чувствовать даже запах.</p>
+					<a href="">Купить</a>
+				</div>
+			</div>
+			<div class="bannerImg" id="slideshow">
+				<img src="img/snus3.png" class="active" alt="">
+				<img src="img/snus2.png" alt="">
+				<img src="img/logo.png" alt="">
+			</div>
+		</div>
+		<div class="icons">
+			<ul class="controlers">
+				<li><a><img src="img/backNew1.png" alt="" width="60" height="100" onclick="prevSlide();prevSlideText();"></a></li>
+				<li><a><img src="img/nextNew.png" alt="" width="60" height="100" onclick="nextSlide();prevSlideText();"></a></li>
+			</ul>
+		</div>
 	</div>
 		<div class="wrapper" id="blur">
 		<section class="description">
@@ -298,59 +300,13 @@
 					</div>
 			</div>
 		</div>
-					<div id="popupBasket">
-				<div class="close-pop p-two" onclick="toggleB()">			
-				</div>
-					<div class="wrapper-info-basket">
-						<h3>Товары в корзине</h3>
-						<div class="one-tov">
-							<div class="pop-img">
-								<img src="img/snus3.png" alt="">
-							</div>
-							<h2>Corvus Extreme Snus</h2>
-							<div class="sum-product">
-								<p>210грн&times;</p>
-								<div class="quantity">
-							          <button class="minus-btn" type="button" name="button">
-							            <img src="img/minus.svg" alt="" />
-							          </button>
-							          <p>1</p>
-							           <button class="plus-btn" type="button" name="button">
-							            <img src="img/plus.svg" alt="" />
-							          </button>
-						        </div>
-								<p>&#61; 210 грн</p>
-							</div>
-							<div class="close-this">
-								
-							</div>
-							<div class="clear"></div>
-						</div>
-						<div class="total-point">
-							<h3>Итог <span>300грн</span></h3>
-						</div>
-						<a href="form.html">
-				     		<div class="tbuy">
-      		 					<h3>Оформить заказ</h3>
-      						</div>
-      					</a>
-					</div>
-			</div>
 <div type="button" class="callback-bt">
 	<a href="tg://resolve?domain=Lukanbukan">
-    	<div class="text-call">
-    		<img src="img/icons8.png" alt="">
-       		<span>Перейти в<br>телеграм</span>
-   		</div>
-	</a>
-</div>
-<div type="button" class="basket-b" onclick="toggleB()">
-	<a href="#">
-    	<div class="text-basket-b">
-    		<img src="img/icons-basket.png" alt="" id="basketImg1" class="basketImg">
-       		<span>Корзина</span>
-   		</div>
-	</a>
+    <div class="text-call">
+    	<img src="img/icons8.png" alt="">
+        <span>Перейти в<br>телеграм</span>
+    </div>
+</a>
 </div>
 <!-- 	<script src="js/jquery.vide.min.js"></script> -->
 	<script src="js/main.js" type="text/javascript"></script>

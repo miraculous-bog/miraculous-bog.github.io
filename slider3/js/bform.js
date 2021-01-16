@@ -23,7 +23,7 @@ function showCart() {
         $.getJSON('goods.json', function (data) {
             let goods = data;
             let out = '';
-						out += `<h4>Продукт <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b class="b-i"></b></span></h4>`;
+						out += `<h4>Продукт <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>`;
 			
             for (let id in cart) {
 				out += `<p><a href="#">${goods[id].name}</a><span class="price">${cart[id]*goods[id].cost}</span></p>`;/* 
@@ -45,7 +45,7 @@ function showCart() {
             }
 			out += ci;
             $('.counter-bas').html(out);	
-            $('.b-i').html(out);
+
         });
 		
     }

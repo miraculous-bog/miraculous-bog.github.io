@@ -10,18 +10,6 @@ function toggle(){
 	var hid3 = document.querySelector('.container');
 			hid3.classList.toggle('hidsel');
 }
-function toggleB(){
-	var blur = document.getElementById('blur');
-	blur.classList.toggle('active');
-	var popup = document.getElementById('popupBasket');
-	popup.classList.toggle('active');
-	var hid1 = document.querySelector('header');
-	var hid2 = document.querySelector('nav');
-	hid1.classList.toggle('hidsel');
-	hid2.classList.toggle('hidsel');
-	var hid3 = document.querySelector('.container');
-			hid3.classList.toggle('hidsel');
-}
 var slide = document.getElementById('slide');
 var	g = document.getElementById('g');
 var	m = document.getElementById('m');
@@ -224,14 +212,3 @@ $(document).ready(function() {
       return false;
    });
 });
-
-
-/*$(".a-trade").on('click', function(){
-        $(".text-basket-b-img").css("animation", "1200ms ease 0s normal none 1 running shake");
-        $(".text-basket-b-img").css("animation-iteration-count": "1");
- });*/
-function addAnimToBas() {
-	let el = document.getElementById("basketImg1");
-	el.style.animation_iteration_count = "1";
-}
-/*document.querySelector("").style.width = "";*/

@@ -7,40 +7,25 @@ function init() {
 
 function goodsOut(data) {
     // вывод на страницу
-	  $.getJSON('goods.json', function (data) {
-			let goods = data;
-            let out = '';
-			let ci = 0; 
-            for (let id in cart) {
-				ci += cart[id];
-            }
-			out += ci;
-            $('.counter-bas').html(out);	
-
-        });
     console.log(data);
     let out='';
     for (var key in data) {
         out +='<div class="trade-block anim-items anim-no-hide">';
-        	out +=`<h2 class="eng eng2 hide-this">${data[key].name}</h2>`;  
-			out +=`<img src="${data[key].img}" onclick="toggle()">`;
-			if (data[key].top === 1) {
-				out +=`<div class="top-product"><p>хит</p></div>`;
-			}
+        	out +=`<img src="${data[key].img}">`;
        		out +='<div class="hover-block">';
         		out +=`<h2 class="eng">${data[key].name}</h2>`;
         		out +=`<div class="trade-ico"><a href="#" onclick="toggle()"><img src="img/magnifier.png"></a><a href="#" class="add-to-cart" data-id="${key}"><img src="img/basket.png"></a></div>`;
+/*        out +=`<div class="cost">${data[key].cost}</div>`;*/
+/*        out +='<button class="add-to-cart">Купить</button>';*/
         out +='</div>';
-        out +=`<a href="#" class="add-to-cart a-trade hide-this" data-id="${key}">Купить</a>`;
         out +='</div>';
     }
     $('.tradeNet').html(out);
   $('.add-to-cart').on('click', addToCart);
 }
 
-function addToCart(event) {
+function addToCart() {
     //добавляем товар в корзину
-    event.preventDefault();
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==undefined) {
