@@ -102,6 +102,25 @@ function addToCart(event) {
   });
   }
 
+
+
+
+/*  }, 1000, 'easeInOutExpo');
+   
+  setTimeout(function () {
+  carting.effect("shake", {
+  times: 2
+  }, 200);
+  }, 1500);
+
+  imgclone.animate({
+  'width': 0,
+  'height': 0
+  }, function () {
+  $(this).detach()
+  });
+  }
+*/
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==undefined) {
