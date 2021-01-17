@@ -65,7 +65,7 @@ function addToCart(event) {
     //добавляем товар в корзину
     event.preventDefault();
 
-  var carting = $('.basketImg');
+/*  var carting = $('.basketImg');
   var imgtodrag = $(this).parent('.trade-block').find("img").eq(0);
   if (imgtodrag) {
   var imgclone = imgtodrag.clone()
@@ -101,7 +101,7 @@ function addToCart(event) {
   $(this).detach()
   });
   }
-
+*/
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==undefined) {
