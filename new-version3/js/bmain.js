@@ -60,7 +60,7 @@ function goodsOut(data) {
     $('.tradeNet').html(out);
   $('.add-to-cart').on('click', addToCart);
 }
-
+   
 function addToCart(event) {
     //добавляем товар в корзину
     event.preventDefault();
