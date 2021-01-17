@@ -12,7 +12,10 @@ body {
 .eng {
 			font-family: 'nanumgothicbold', sans-serif;
 }
-
+.passive {
+	opacity: 0;
+	position: absolute;
+}
 .wrapper {
 	width: 1000px;
 	margin: 0 auto;

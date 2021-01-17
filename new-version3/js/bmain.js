@@ -51,7 +51,7 @@ function goodsOut(data) {
 			}*/
        		out +='<div class="hover-block">';
         		out +=`<h2 class="eng">${data[key].name}</h2>`;
-        		out +=`<div class="trade-ico"><a href="#" onclick="toggle()"><img src="img/magnifier.png"></a><a href="#" class="add-to-cart" data-id="${key}"><img src="img/basket.png"></a></div>`;
+        		out +=`<div class="trade-ico"><img src="${data[key].img}" class="passive"><a href="#" onclick="toggle()"><img src="img/magnifier.png"></a><a href="#" class="add-to-cart" data-id="${key}"><img src="img/basket.png"></a></div>`;
         out +='</div>';
         out +=`<p class="pricehide hide-this">${data[key].cost} &#8372;</p>`;
         out +=`<a href="#" class="add-to-cart a-trade hide-this" data-id="${key}">Купить</a>`;
@@ -65,8 +65,43 @@ function addToCart(event) {
     //добавляем товар в корзину
     event.preventDefault();
 
-/* 
-*/
+  var carting = $('.basketImg');
+  var imgtodrag = $(this).parent().find("img").eq(0);
+  if (imgtodrag) {
+  var imgclone = imgtodrag.clone()
+  .offset({
+  top: imgtodrag.offset().top,
+  left: imgtodrag.offset().left
+  })
+  .css({
+  'opacity': '0.5',
+  'position': 'absolute',
+  'height': '150px',
+  'width': '150px',
+  'z-index': '100'
+  })  
+  .appendTo($('body'))
+  .animate({
+  'top': carting.offset().top + 10,
+  'left': carting.offset().left + 10,
+  'width': 75,
+  'height': 75
+  }, 1000, 'easeInOutExpo');
+   
+  setTimeout(function () {
+  carting.effect("shake", {
+  times: 2
+  }, 200);
+  }, 1500);
+
+  imgclone.animate({
+  'width': 0,
+  'height': 0
+  }, function () {
+  $(this).detach()
+  });
+  }
+
     var id = $(this).attr('data-id');
     // console.log(id);
     if (cart[id]==undefined) {
