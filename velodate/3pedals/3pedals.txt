@@ -1,0 +1,96 @@
+	3pedals
+id 31
+code 22040
+name Педали алюминиевые
+price 
+img pedals1.png
+
+id 32
+code 220005
+name Педали алюминиевые
+price 
+img pedals2.png
+
+id 33
+code 2200960
+name Педали детские
+price 
+img pedals3.png
+
+id 34
+code 220016
+name Педали пластиковые
+price 1.8
+img pedals4.png
+
+id 35
+code 220041
+name Педали детские 1/2"
+price 1.6
+img pedals5.png
+
+id 36
+code 220065
+name Педали алюминиевые BMX
+price 6.45
+img pedals6.png
+
+id 37
+code 220076
+name Педали туристические
+price 5.75
+img pedals7.png
+
+id 38
+code 220806
+name Педали с резиновыми вставками
+price 3.5
+img pedals8.png
+
+id 39
+code 220809
+name Педали с резиновыми вставками
+price 4 
+img pedals9.png
+
+id 310
+code 220810
+name Педали с резиновыми вставками
+price 4.1
+img pedals10.png
+
+id 311
+code 220660
+name Педали дорожные
+price 2.75
+img pedals11.png
+
+id 312
+code 220914
+name Шипы SHIMANO SPDSMSH 52 и другие SPD
+price 13.8
+img pedals12.png
+
+id 313
+code 22009192
+name Шипы SHIMANO SMSH12 SPD
+price 18.2
+img pedals13.png
+
+id 314
+code 220100
+name Педали Shimano SPD M520
+price 42.2
+img pedals14.png
+
+id 315
+code 220119
+name Педали Shimano Sora 530
+price 67.8
+img pedals15.png
+
+id 316
+code 220008
+name Педали алюминиевые
+price 4.3
+img pedals16.png

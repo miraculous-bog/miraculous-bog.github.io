@@ -1,0 +1,138 @@
+	11takeaway
+id 111
+code 308111
+name Переходник 28.6*22.2мм
+price 3.7
+img takeaway1.png
+
+id 112
+code 430095
+name Вынос Ahead 1 1/8"
+price 2.9
+img takeaway2.png
+
+id 113
+code 430145
+name Вынос 22.2*30*220мм
+price 2.2
+img takeaway3.png
+
+id 114
+code 430508
+name Вынос 22.2*100*150мм
+price 2.2
+img takeaway4.png
+
+id 115
+code 430805
+name Вынос 21.1*100мм
+price 2.4
+img takeaway5.png
+
+id 116
+code 430084
+name Вынос регулируемый 22.2*110/180мм 
+price 8.3
+img takeaway6.png
+
+id 117
+code 430103
+name Вынос регулируемый 22.2*120/180мм
+price 8.3
+img takeaway7.png
+
+id 118
+code 430091
+name Вынос регулируемый 25.4*90/180мм
+price 8.5
+img takeaway8.png
+
+id 119
+code 430087
+name Вынос регулируемый 28.6/25.4мм
+price 7.9
+img takeaway9.png
+
+id 1110
+code 430170
+name ВЫнос ZOOM Ahead 28.6*90мм + 15 грдусов
+price 8.6
+img takeaway10.png
+
+id 1111
+code 430166
+name Вынос AMOEDA Ahead 28.6*60мм + 10 грдусов
+price 16.8
+img takeaway11.png
+
+id 1112
+code 430091
+name Вынос ZOOM Ahead 28.6*90мм + 15 грдусов
+price 7.1
+img takeaway12.png
+
+id 1113
+code 430126
+name Вынос ZOOM Ahead 28.6*110мм + 10 грдусов
+price 12.1
+img takeaway13.png
+
+id 1114
+code 4301262
+name Вынос ZOOM Ahead 28.6*90мм + 10 грдусов
+price 12.3
+img takeaway14.png
+
+id 1115
+code 4301263
+name Вынос ZOOM Ahead 28.6*90мм + 10 грдусов
+price 12.1
+img takeaway15.png
+
+id 1116
+code 430168
+name Вынос ZOOM Ahead 3D 31.8 28.6*90мм + 7 грдусов
+price 11.7
+img takeaway16.png
+
+id 1117
+code 430169
+name Вынос ZOOM Ahead 3D 31.8 28.6*120мм + 7 грдусов
+price 12.1
+img takeaway17.png
+
+id 1118
+code 430530
+name Вынос TKX Ahead /31.8 1 1/8"*90мм
+price 11.9
+img takeaway18.png
+
+id 1119
+code 430531
+name Вынос TKX Ahead /31.8 1 1/8"*100мм
+price 11.9
+img takeaway19.png
+
+id 1120
+code 430532
+name Вынос TKX Ahead /31.8 1 1/8"*110мм
+price 11.9
+img takeaway20.png
+
+id 1121
+code 430534
+name Вынос TKX Ahead /31.8 1 1/8"*70мм
+price 11.9
+img takeaway21.png
+
+id 1122
+code 430131
+name Вынос TKX Ahead /25.4 1 1/8"*60мм
+price 7
+img takeaway22.png
+
+id 1123
+code 430174
+name Вынос TKX Ahead /25.4 1 1/8"*80мм
+price 7
+img takeaway23.png

@@ -1,0 +1,190 @@
+		1 fenders
+id 11
+code 020165
+name Simpla UBIQUIT SDL 28, крепление болтом
+price 10.10
+img fender1.png
+
+id 12
+code 020166
+name SIMPLA UBIQUIT SDS 28, крепление на защёлке
+price 10.10
+img fender2.png
+
+id 13
+code 020140
+name SIMPLA URBAN Short 28, крепление на защёлке
+price 8.90
+img fender3.png
+
+id 14
+code 020141
+name SIMPLA URBAN Long 28, крепление болтом
+price 8.90
+img fender4.png
+
+id 15
+code 020126
+name SIMPLA KIDO ONE Short 12
+price 5.40
+img fender5.png
+
+id 16
+code 020127
+name SIMPLA KIDO ONE Long 16
+price 5.5
+img fender6.png
+
+id 17
+code 020131
+name SIMPLA KIDO ONE Short 20
+price 7.5
+img fender7.png
+
+id 18
+code 020133
+name SIMPLA KIDO PRO 16-20
+price 11.1
+img fender8.png
+
+id 19
+code 020185
+name SIMPLA IQ FAT 3шт
+price 18.5
+img fender9.png
+
+id 110
+code 020152
+name SIMPLA ADHD Short 27.5-29, крепление эксцентриком 
+price 25
+img fender10.png
+
+id 111
+code 020118
+name SIMPLA HAMMER 2 24-29, крепление ремешком
+price 14.3
+img fender11.png
+
+id 112
+code 020170
+name SIMPLA HAMMER 1 24-29, крепление болтом
+price 14
+img fender12.png
+
+id 113
+code 020026
+name SIMPLA HAMMER PRO 24-29
+price 16
+img fender13.png
+
+id 114
+code 020000
+name SIMPLA HANNER 2 24-29, крепление ремешком
+price 14.4
+
+id 115
+code 020109
+name SIMPLA HAMMER 1 24-29, крепление болтом
+price 13.9
+
+id 116 
+code 020115
+name SIMPLA GP SDE 24-28
+price 10.3
+img fender16.png
+
+id 117
+code 020130
+name SIMPLA CROSS SDE 24-28
+price 4.8
+img fender17.png
+
+id 118 
+code 020117
+name SIMPLA CROSS PLUS 24-28
+price 6.9
+img fender18.png
+
+id 119
+code 020119
+name SIMPLA RAPTOR PRO 24-28, крепление эксцентриком
+price 13.5
+img fender19.png
+
+id 120
+code 020119
+name SIMPLA RAPTOR 2 24-28
+price 11.3
+img fender20.png
+
+id 121
+code 020112
+name  SIMPLA RAPTOR 1 24-28, репление болтом
+price 11.1
+img fender21.png
+
+id 122
+code 020124
+name SIMPLA RAPTOR 1 24-28
+price 11.3
+img fender22.png
+
+id 123
+code 020151
+name SIMPLA RAPTOR Long+сики 24-26, крепление болтом
+price 6.7
+img fender23.png
+
+id 124
+code 020160
+name SIMPLA RAPTOR Short+усики 24-26, крепление на защёлке
+price 6.7
+img fender24.png
+
+id 125
+code 020121
+name SIMPLA RAPTOR Long 24-28, крепление болтом
+price 6
+img fender25.png
+
+id 126
+code 020114
+name SIMPLA RAPOT Short 24-28, крепление на защёлке
+price 6
+img fender26.png
+
+id 127
+code 020113
+name SIMPLA RAPTOR Long 24-28, крепление болтом
+price 5.9
+img fender27.png
+
+id 128
+code 020111
+name SIMPLA RAPOTR Short24-28, репление на защёлке
+price 5.9
+img fender28.png
+
+id 129
+code 020013
+name SIMPLA V-BRAKE SDE 24-28
+price 4.9
+img fender29.png
+
+id 130
+code 020019
+name SIMPLA NEXT Short 24-28, короткое крепление
+price 4.2
+img fender30.png
+
+id 131
+code 020021
+name SIMPLA NEXT Long 24-26, длинное крепление
+price 4.2
+img fender31.png
+
+id 132
+code 020017
+name SIMPLA CLASSIC 24-26
+price 4.8
+img fender32.png

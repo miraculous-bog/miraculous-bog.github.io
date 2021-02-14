@@ -1,0 +1,79 @@
+	10steering
+id 101
+code 310188
+name Руль 560мм
+price 1.7
+img steering1.png
+
+id 102
+code 310015
+name Руль 22,2/25,4*90*670мм
+price 5.2
+img steering2.png
+
+id 103
+code 310051
+name Руль TKX 31.8*720мм
+price 19.5
+img steering3.png
+
+id 104
+code 310100
+name Руль ZOOM 600*50+6градусов, алюминиевый 22.2*25.4мм
+price 9.8
+img steering4.png
+
+id 105
+code 310189
+name Руль 580мм
+price 4.4
+img steering5.png
+
+id 106
+code 310620
+name Руль Zoom 600*25.4мм, алюминивый
+price 8.3
+img steering6.png
+
+id 107
+code 310025
+name Руль MODE 680*170*25.4мм, алюминивый
+price 10.8
+img steering7.png
+
+id 108
+code 310026
+name Руль MODE 600*40*25.4мм, алюминивый
+price
+img steering.png
+
+id 109
+code 3100261
+name Руль MODE 600*40*25.4мм, алюминивый
+price 5.6
+img steering9.png
+
+id 1010
+code 310617
+name Руль шоссе ZOOM 400*25.4мм, чёрный
+price 21
+img steering10.png
+
+id 1011
+code 3102072
+name Руль шоссе ZOOM 440*31.8мм
+price 23.8
+img steering11.png
+
+id 1012
+code 310063
+name Руль TKX 740*31.8мм
+price 5.1
+img steering12.png
+
+id 1013
+code 310028
+name Руль BMX сальной, 480*120мм
+price 4.8
+img steering13.png
+
