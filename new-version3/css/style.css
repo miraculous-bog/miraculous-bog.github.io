@@ -539,16 +539,15 @@ footer {
 	color: black;
 	border: 1px solid grey;
 }
-#popupBasket.active {
+#popup.active {
 	visibility: visible;
 	opacity: 1;
 	transition: 0.5s;
 }
-.wrapper#blur.active {
+.wrapper#blur.active{
 	filter: blur(20px);
 	pointer-events: none;
 	user-select: none;
-
 }
 #popupBasket {
 	position: fixed;
@@ -566,7 +565,7 @@ footer {
 	color: black;
 	border: 1px solid grey;
 }
-#popupBasket.active {
+#popupBasket.activeb {
 	visibility: visible;
 	opacity: 1;
 	transition: 0.5s;

@@ -12,9 +12,9 @@ function toggle(){
 }
 function toggleB(){
 	var blur = document.getElementById('blur');
-	blur.classList.toggle('active');
+	blur.classList.toggle('activeb');
 	var popup = document.getElementById('popupBasket');
-	popup.classList.toggle('active');
+	popup.classList.toggle('activeb');
 	var hid1 = document.querySelector('header');
 	var hid2 = document.querySelector('nav');
 	hid1.classList.toggle('hidsel');
