@@ -71,7 +71,7 @@ function showCart() {
             $('.tinfo').html(out); 
 
         });
-    }*/
+    }
 }
 
 function delGoods() {
