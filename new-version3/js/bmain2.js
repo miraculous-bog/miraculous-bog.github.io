@@ -21,17 +21,17 @@ function showCart() {
             var goods = data;
             var out = '';
             for (var id in cart) {
-    out += <div class="item">;
-   out += <div class="buttons del-goods" data-id="${id}"><span class="delete-btn"></span></div>;
-   out += <div class="image"><img src="${goods[id].img}" alt=""  width="90" height="90" /></div>;
-   out += <div class="description-c"><span>${goods[id].name}</span><br></div>;
-   out += <div class="quantity">;
-   out += <button class="minus-btn minus-goods" data-id="${id}" type="button" name="button"><img src="img/minus.svg" alt="" /></button>; 
+    out += `<div class="item">`;
+   out += `<div class="buttons del-goods" data-id="${id}"><span class="delete-btn"></span></div>`;
+   out += `<div class="image"><img src="${goods[id].img}" alt=""  width="90" height="90" /></div>`;
+   out += `<div class="description-c"><span>${goods[id].name}</span><br></div>`;
+   out += `<div class="quantity">`;
+   out += `<button class="minus-btn minus-goods" data-id="${id}" type="button" name="button"><img src="img/minus.svg" alt="" /></button>`; 
     out +=`<p> ${cart[id]}</p>`;  
-   out += <button class="plus-btn plus-goods" data-id="${id}" type="button" name="button"><img src="img/plus.svg" alt="" /></button>;
-   out += </div>;
-   out += <div class="total-price"><p>${cart[id]*goods[id].cost}</p></div>;
-   out += </div>; */
+   out += `<button class="plus-btn plus-goods" data-id="${id}" type="button" name="button"><img src="img/plus.svg" alt="" /></button>`;
+   out += `</div>`;
+   out += `<div class="total-price"><p>${cart[id]*goods[id].cost}</p></div>`;
+   out += `</div>`; 
    out += `<h3>Товары в корзине</h3><div class="one-tov">`;
    out += `<div class="pop-img">`;
    out += `<img src="${goods[id].img}" alt="">`;
